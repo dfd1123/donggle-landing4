@@ -22,6 +22,43 @@
 <script type="text/javascript" src="./js/scrolla.jquery.js"></script>
 <script type="text/javascript" src="./js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="./js/slick.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "259151521911286");
+      fbq('set', 'mobileBridge', '219539359099661', '3373848672641854');
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none;"
+        src="https://www.facebook.com/tr?id=259151521911286&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 
 <!-- Channel Plugin Scripts -->
 <script>
@@ -88,22 +125,6 @@
 <![endif]-->
 
   <script>
-		var userAgent = navigator.userAgent || navigator.vendor || window.opera
-
-		// Windows Phone must come first because its UA also contains "Android"
-		if (/windows phone/i.test(userAgent)) {
-			location.href='https://m.dong-gle.co.kr';
-		}
-
-		if (/android/i.test(userAgent)) {
-			location.href='https://m.dong-gle.co.kr';
-		}
-
-		// iOS detection from: http://stackoverflow.com/a/9039885/177710
-		if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-			location.href='https://m.dong-gle.co.kr';
-		}
-
 		$(document).ready(function(){
 			$.support.cors = true;
 			var windowWidth = $( window ).width();
@@ -147,8 +168,7 @@
 	<div class="cbp-af-header">
 		<div class="cbp-af-inner">
 			<h1 class="mobile"><img src="./img/h1_logo_w.png" alt="로고"/><img src="./img/h1_logo_color.png" alt="로고"/></h1>
-			<nav>
-				<a href="#" rel="#slide05" class="m4">입점안내</a>
+			<nav>			
 				<a href="#" rel="#slide04" class="m4">관련 기사</a>
 				<a href="#" rel="#slide03" class="m3">사용자 리뷰</a>
 				<a href="#" rel="#slide02" class="m2">서비스&앱 소개</a>
@@ -165,8 +185,7 @@
 					<li><a href="#" id="a-slide01" rel="#slide01" class="on">앱 다운로드</a></li>
 					<li><a href="#" id="a-slide02" rel="#slide02">서비스&앱 소개</a></li>
 					<li><a href="#" id="a-slide03" rel="#slide03">사용자 리뷰</a></li>
-					<li><a href="#" id="a-slide04" rel="#slide04">관련 기사</a></li>
-					<li><a href="#" id="a-slide05" rel="#slide05">입점안내</a></li>
+					<li><a href="#" id="a-slide04" rel="#slide04">관련 기사</a></li>					
 				</ul>
 			</div>
 			<p id="top_btn" class="en">scroll</p>
@@ -185,8 +204,8 @@
 							<li class="animate" data-animate="fadeIn" data-duration="1.9s" data-delay="0.5s">동대문 글로벌 <strong>동글</strong></li>
 						</ul>
 						<dl class="animate" data-animate="fadeInUp" data-duration="1.9s" data-delay="0.6s">
-							<dt>앱 다운로드</dt>
-							<dd><a href="http://play.google.com/store/apps/details?id=com.mycisco.donggle.user" target="_blank"><img src="./img/img_google.png" alt=""/></a><a href="https://itunes.apple.com/kr/app/apple-store/동글/id1505168322" target="_blank"><img src="./img/img_app.png" alt=""/></a></dd>
+							<dt>동글 구경하기</dt>
+							<dd><a href="https://dong-gle.co.kr" target="_blank" onclick="fbq('track', 'FindLocation');">동글 구경하기</a></dd>
 						</dl>
 					</div>
 					<div class="mainimg">
@@ -282,52 +301,6 @@
 					<a href="" class="more" style="display:none;">더보기</a>
 				</div>
 			</section>
-			
-			<section id="slide05" >
-				<div class="guide">
-					<h2>입점안내</h2>
-					<ul>
-						<li>
-							<div>
-								<em>01</em>
-								<p><img src="./img/ic_guide01.png" alt=""/></p>
-								<h3>동글 가맹점 관리자 <br/>
-									웹 접속 or 앱 설치 </h3>
-							</div>
-						</li>
-						<li>
-							<div>
-								<em>02</em>
-								<p><img src="./img/ic_guide02.png" alt=""/></p>
-								<h3>회원가입</h3>
-							</div>
-						</li>
-						<li>
-							<div>
-								<em>03</em>
-								<p><img src="./img/ic_guide03.png" alt=""/></p>
-								<h3>스토어 설정정보 입력</h3>
-							</div>
-						</li>
-						<li>
-							<div>
-								<em>04</em>
-								<p><img src="./img/ic_guide04.png" alt=""/></p>
-								<h3>입점심사 승인</h3>
-							</div>
-						</li>
-					</ul>
-					<dl>
-						<dt>앱 다운로드</dt>
-						<dd><a href="http://play.google.com/store/apps/details?id=com.mycisco.donggle.store"><img src="./img/img_google.png" alt=""/></a><a href="https://itunes.apple.com/kr/app/apple-store/동글-가맹점/id1506485764"><img src="./img/img_app.png" alt=""/></a></dd>
-					</dl>
-					<dl class="sitego">
-						<dt>동글 가맹점 사이트</dt>
-						<dd><a href="https://store.dong-gle.co.kr">동글 가맹점 사이트 바로가기</a></dd>
-					</dl>
-				</div>
-			</section>
-		
 		</div>
 
 		<!-- footer -->
