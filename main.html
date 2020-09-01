@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>doggle</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link rel="stylesheet" type="text/css" href="./css/layout.css">
+<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="./css/merit.css">
+<link rel="stylesheet" type="text/css" href="./css/mobile.css" media = "(min-width:300px) and (max-width:1200px)">
+<link rel="stylesheet" type="text/css" href="./css/animate.css" media = "screen and (min-width:1026px)">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/html5shiv.js"></script>
+<script type="text/javascript" src="./js/respond.src.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/modernizr.custom.js"></script>
+<script type="text/javascript" src="./js/scrolla.jquery.js"></script>
+<script type="text/javascript" src="./js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="./js/slick.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+  <script>
+	$(document).ready(function(){
+		var windowWidth = $( window ).width();
+		if(windowWidth > 1024) {
+		  $.getScript("./js/scrolla.jquery.js", function(){
+				 $('.animate').scrolla({
+				mobile: false
+			});
+			
+		  });
+		 
+		}
+	});
+</script>
+
+</head>
+<body>
+	<div class="cbp-af-header">
+		<div class="cbp-af-inner">
+			<h1 class="mobile"><img src="./img/h1_logo_w.png" alt="로고"/><img src="./img/h1_logo_color.png" alt="로고"/></h1>
+			<nav>
+				<a href="#" rel="#slide05" class="m4">입점안내</a>
+				<a href="#" rel="#slide04" class="m4">관련 기사</a>
+				<a href="#" rel="#slide03" class="m3">사용자 리뷰</a>
+				<a href="#" rel="#slide02" class="m2">서비스&앱 소개</a>
+				<a href="#" rel="#slide01" class="m1">앱 다운로드</a>
+			</nav>
+		
+		</div>
+	</div>
+	<div id="wrap">
+		<div id="main_header" >
+			<h1><a href="/"><img src="./img/h1_logo_w.png" alt="로고"/><img src="./img/h1_logo_color.png" alt="로고"/></a></h1>
+			<div id="main_lnb" class="lnbline">
+				<ul>
+					<li><a href="#" rel="#slide01" class="on">앱 다운로드</a></li>
+					<li><a href="#" rel="#slide02">서비스&앱 소개</a></li>
+					<li><a href="#" rel="#slide03">사용자 리뷰</a></li>
+					<li><a href="#" rel="#slide04">관련 기사</a></li>
+					<li><a href="#" rel="#slide05">입점안내</a></li>
+				</ul>
+			</div>
+			<p id="top_btn" class="en">scroll</p>
+		</div>
+		<div id="main_container">
+
+			<section id="slide01">
+				<div class="visbg"></div>
+				<div class="spot">
+					<div class="maintxt">
+						<h2 class="animate" data-animate="fadeInDown" data-duration="1.8s" data-delay="0.3s">이제 <strong><em>옷</em><em>값</em></strong>만 내고 <br/>
+						쇼핑하자!</h2>
+						<ul>
+							<li class="animate" data-animate="fadeIn" data-duration="1.9s" data-delay="0.4s">소비자와 도매업체를 직접 연결, 중간 유통마진을 없애 <br/>
+								최저가 보다 낮은 도.매.가로 구매할 수 있는 쇼핑 플랫폼 </li>
+							<li class="animate" data-animate="fadeIn" data-duration="1.9s" data-delay="0.5s">동대문 글로벌 <strong>동글</strong></li>
+						</ul>
+						<dl class="animate" data-animate="fadeInUp" data-duration="1.9s" data-delay="0.6s">
+							<dt>앱 다운로드</dt>
+							<dd><a href=""><img src="./img/img_google.png" alt=""/></a><a href=""><img src="./img/img_app.png" alt=""/></a></dd>
+						</dl>
+					</div>
+					<div class="mainimg">
+						<p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.6s"><img src="./img/img_mainvis_phone.png" alt=""/></p>
+						<span class="animate" data-animate="fadeInDown" data-duration="1.5s" data-delay="0.4s"><img src="./img/img_ball_big.png" alt=""/></span>
+						<span class="animate" data-animate="fadeInDown" data-duration="1.3s" data-delay="0.2s"><img src="./img/img_ball_sm.png" alt=""/></span>
+						<em class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s"><img src="./img/txt_doggle_sero.png" alt=""/></em>
+					</div>
+				</div>
+			</section>
+			
+			<section id="slide02">
+				<div class="wbg"></div>
+				<div class="service">
+					<h2>서비스 & 앱 소개</h2>
+					<span class="info"><i><img src="./img/ic_info.png"/></i><em>동글가는 도매가에 서비스 운영을 위한 <br/>
+						최소한의 수수료와 부가세(VAT)를 포함한 가격입니다.</em></span>
+					<div class="slider-for">
+						<div class="big">
+							<p><img src="./img/ic_merit01_big.png" alt=""/></p>
+							<span><img src="./img/ph_service01.png" alt=""/></span>
+							<h3><strong>시중가/동글가</strong>시중에서 파는 옷보다 <br/>절반 가격으로 살 수 있다고?</h3>
+						</div>
+						<div class="big">
+							<p><img src="./img/ic_merit02_big.png" alt=""/></p>
+							<span><img src="./img/ph_service02.png" alt=""/></span>
+							<h3><strong>묶음배송</strong>여러 상품 구매할때는 상품마다 <br/>
+							배송비 내지말고 묶음으로 배송비 아껴보자!</h3>
+						</div>
+						<div class="big">
+							<p><img src="./img/ic_merit03_big.png" alt=""/></p>
+							<span><img src="./img/ph_service03.png" alt=""/></span>
+							<h3><strong>동글에서 아낀 금액</strong>몇번 사고 보니 내가 아낀<br/>
+								금액이 이만큼이나?</h3>
+						</div>
+						<div class="big">
+							<p><img src="./img/ic_merit04_big.png" alt=""/></p>
+							<span><img src="./img/ph_service04.png" alt=""/></span>
+							<h3><strong>다양한 입점 스토어</strong>동대문에 도매 매장들이<br/>
+									모두 여기 있었네!!<br/>
+									이모 깔별로 주세요~</h3>
+						</div>
+					</div>
+					<div class="slider-nav">
+						<div>
+							<div class="sv">
+								<p><img src="./img/ic_merit01_sm.png" alt=""/></p>
+								<h3>시중가/동글가</h3>
+								<i><img src="./img/ic_plus.png" alt=""/></i>
+							</div>
+						</div>
+						<div>
+							<div  class="sv">
+								<p><img src="./img/ic_merit02_sm.png" alt=""/></p>
+								<h3>묶음배송</h3>
+								<i><img src="./img/ic_plus.png" alt=""/></i>
+							</div>
+						</div>
+						<div>
+							<div  class="sv">
+								<p><img src="./img/ic_merit03_sm.png" alt=""/></p>
+								<h3>동글에서 아낀 금액</h3>
+								<i><img src="./img/ic_plus.png" alt=""/></i>
+							</div>
+						</div>
+						<div>
+							<div  class="sv">
+								<p><img src="./img/ic_merit04_sm.png" alt=""/></p>
+								<h3>다양한 입점 스토어</h3>
+								<i><img src="./img/ic_plus.png" alt=""/></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section id="slide03">
+				<em>여러분도 동글에서 원하는 상품을 찾아서 구매해보세요!</em>
+				<div class="review">
+					<h2>사용자 리뷰 <em>동글에서 상품을 구매한 분들의 실제 리뷰입니다.</em></h2>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+								<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<h3>닉네임 <em class="en">2020.12.30</em></h3>
+									<span class="score">
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star on"></i>
+										<i class="star"></i>
+										<strong class="en">4.9</strong>
+									</span>
+									<dl>
+										<dt>옵션</dt>
+										<dd>빨강 / F</dd>
+									</dl>
+									<dl class="last">
+										<dt>체형</dt>
+										<dd>163cm/ 78kg</dd>
+									</dl>
+									<p><img src="./img/img_clothes.png" alt=""/></p>
+									<span class="txt">좀 파격적인 의상이 많아서 구입을 좀 망설이고 있었는데
+									요즘 제가 입을 수 있는 의상이랑 마음에는 드는게 많이 
+									올라와서구매하고 있어요 앞으로도 이런 의상 많이 좀 ..
+									</span>
+								</div>
+							</div>
+						</div>
+				</div>
+			</section>
+			
+			<section id="slide04" >
+				<div class="news">
+					<h2>동글 관련기사 <em class="en">donggle in media </em></h2>
+					<div class="grid">
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_new01.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_news02.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_news02.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_news03.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_new04.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_news03.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_news02.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+						<a href="">
+							<div class="grid-item">
+								<p><img src="./img/img_new04.png" alt=""/></p>
+								<i><img src="./img/img_newslogo.png" alt=""/></i>
+								<span>동대문 의류, 도매가에 구입하세요… 도매시장 
+								쇼핑플랫폼 동글 런칭</span>
+								<em class="en">2020.12.30</em>
+							</div>
+						</a>
+					</div>
+					<a href="" class="more">더보기</a>
+				</div>
+			</section>
+			
+			<section id="slide05" >
+				<div class="guide">
+					<h2>입점안내</h2>
+					<ul>
+						<li>
+							<div>
+								<em>01</em>
+								<p><img src="./img/ic_guide01.png" alt=""/></p>
+								<h3>동글 가맹점 관리자 <br/>
+									웹 접속 or 앱 설치 </h3>
+							</div>
+						</li>
+						<li>
+							<div>
+								<em>02</em>
+								<p><img src="./img/ic_guide02.png" alt=""/></p>
+								<h3>회원가입</h3>
+							</div>
+						</li>
+						<li>
+							<div>
+								<em>03</em>
+								<p><img src="./img/ic_guide03.png" alt=""/></p>
+								<h3>스토어 설정정보 입력</h3>
+							</div>
+						</li>
+						<li>
+							<div>
+								<em>04</em>
+								<p><img src="./img/ic_guide04.png" alt=""/></p>
+								<h3>입점심사 승인</h3>
+							</div>
+						</li>
+					</ul>
+					<dl>
+						<dt>앱 다운로드</dt>
+						<dd><a href=""><img src="./img/img_google.png" alt=""/></a><a href=""><img src="./img/img_app.png" alt=""/></a></dd>
+					</dl>
+					<dl class="sitego">
+						<dt>동글 가맹점 사이트</dt>
+						<dd><a href="">동글 가맹점 사이트 바로가기</a></dd>
+					</dl>
+				</div>
+			</section>
+		
+		</div>
+
+		<!-- footer -->
+		<div id="footer">
+			<div class="sns">
+				<a href="" target="_blank"><img src="./img/ic_facebook.png" alt=""/></a>
+				<a href="" target="_blank"><img src="./img/ic_insta.png" alt=""/></a>
+				<a href="" target="_blank"><img src="./img/ic_naver.png" alt=""/></a>
+			</div>
+			<div class="footinfo">
+				<p><img src="./img/img_footlogo.png" alt=""/></p>
+				<ul>
+					<li>(주)동글</li>
+					<li>(03075) 서울특별시 성동구 성수동2가 280-9 성수W센터 데시앙플렉스 생각공장 821호</li>
+					<li>사업자 번호 : 000-0000-00</li>
+					<li>통신판매업번호 : 000-0000-0000</li>
+					<li>대표전화 : 070-0000-0000</li>
+					<li>대표메일 : naver@naver.com </li>
+					<li>대표자 : 최영하</li>
+					<li>개인정보 책임관리자 : 홍길동</li>
+				</ul>
+				<cite class="en">copyright 2020 DOGGLE all rights reserved.</cite>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>
+
+
+
+
+	<!--- <div class="people">
+				<span class="animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s"><img src="./img/img_people01.png" alt=""/></span>
+				<span class="animate" data-animate="fadeInUp" data-duration="1.2s" data-delay="0.2s"><img src="./img/img_people02.png" alt=""/></span>
+				<span class="animate" data-animate="fadeInUp" data-duration="1.3s" data-delay="0.3s"><img src="./img/img_people03.png" alt=""/></span>
+				<span class="animate" data-animate="fadeInUp" data-duration="1.4s" data-delay="0.6s"><img src="./img/img_main_people.png" alt=""/></span>
+				<span class="animate" data-animate="fadeInDown" data-duration="1.7s" data-delay="0.4s"><img src="./img/img_people04.png" alt=""/></span>
+				<span class="animate" data-animate="fadeInUp" data-duration="1.5s" data-delay="0.5s"><img src="./img/img_people05.png" alt=""/></span>
+			</div> -->
+<!--<div id="wrap" class="container">
+	
+	
+	<h1 class="mobile"><a href="/"><img src="./img/h1_logo.png" alt="로고"/></a></h1>
+	<div class="cbp-af-header web">
+		<div class="cbp-af-inner">
+			<h1><a href="/"><img src="./img/h1_logo_w.png" alt="로고"/></a></h1>
+			<nav>
+				<a href="#"  class="m1">앱 다운로드</a>
+				<a href="#"  class="m2">서비스&앱 소개</a>
+				<a href="#"  class="m3">사용자 리뷰</a>
+				<a href="#"  class="m4">관련 기사</a>
+				<a href="#"  class="m4">입점안내</a>
+			</nav>
+		
+		</div>
+	</div>
+
+	<div class="main">
+		<section class="section01">
+		</section>
+	</div>
+	<footer>
+		<p ><img src="./img/img_footerlogo.png" alt=""/></p>
+		<cite class="en">copyright <strong>cointouse</strong>  All rights reserved</cite>
+	</footer>
+
+
+</div>-->
+<script src="./js/leftfix.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/classie.js"></script>
+<script src="./js/cbpAnimatedHeader.js"></script>
+ <script>
+     var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+		autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+      },
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+  </script>
+  <script>
+		 $('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,	
+	  asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+	  slidesToShow:3,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: true,
+	  centerMode: true,
+	  focusOnSelect: true,
+	  autoplay: true,
+	  autoplaySpeed: 3000,
+	});
+  </script>
+<script type="text/javascript">
+UI = {
+	load: function(){ 
+		UI.gnb();
+	},
+
+	gnb: function(){ 
+		var gnb = $('nav a'),
+			section = $('.section'),
+			gnbHeight = $('nav').height();
+
+		gnb.each(function(i){this.num = i});
+		
+
+	//	var movement = function(number){ 
+		//	var offsetHeight = section.eq(number).offset().top - gnbHeight; 
+		//	$('html, body').stop().animate({scrollTop:offsetHeight}, 500); 
+		//};
+
+		//gnb.click(function(){
+		//	movement(this.num); 
+		//});
+	}
+}
+
+$(document).ready(function(){
+	UI.load(); 
+});
+$('.grid').masonry({
+  gutter: 25,
+  itemSelector: '.grid-item'
+});
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
