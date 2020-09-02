@@ -169,6 +169,10 @@ background:url(../img/bg_merit.png) no-repeat right top;}
 #slide03 h2{position:relative;max-width:1278px;margin:0 auto;font-size:40px;letter-spacing:-0.5px;font-weight:600;text-align:left;padding:52px 0;}
 #slide03 h2 > em{display:inline-block;margin-left:5px;font-size:18px;font-style:normal;font-weight:300;}
 
+#slide05 h2{position:relative;max-width:1278px;margin:0 auto;font-size:40px;letter-spacing:-0.5px;font-weight:600;text-align:left;padding:52px 0;}
+#slide05 h2 > em{display:inline-block;margin-left:5px;font-size:18px;font-style:normal;font-weight:300;}
+
+
 .swiper-container {position:relative;width: 89%;left:11%;padding-bottom:50px;}
 .swiper-slide {
 		text-align: center;
